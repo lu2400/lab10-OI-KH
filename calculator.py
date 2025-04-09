@@ -6,7 +6,7 @@ import math
 
 """
 calculator.py
-- Defines functions used to create a simple calculator
+- Defines functions used to create a simple calculatorr
 
 One function per operation, in order.
 """
@@ -31,7 +31,7 @@ def mul(a, b):
 def div(a, b):
     if a == 0:
         raise ZeroDivisionError
-    result = b / a
+    result = b/a
     return result
 
 def exp(a, b):
