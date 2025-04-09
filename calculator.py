@@ -1,3 +1,7 @@
+# https://github.com/lu2400/lab10-OI-KH
+# Partner 1: Lu Ighodalo
+# Partner 2: Kian Hidalgo
+
 import math
 
 """
@@ -6,7 +10,6 @@ calculator.py
 
 One function per operation, in order.
 """
-<<<<<<< HEAD
 def square_root(a): 
     if a < 0:
         raise ValueError("ValueError")
@@ -14,8 +17,6 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
-=======
-import math
 
 # First example
 
@@ -36,11 +37,10 @@ def div(a, b):
 def exp(a, b):
     result = a ** b
     return result
->>>>>>> ecb1ba6bd68a47ca9658d16a1515106647435b2b
 
 def subtract(a, b): a - b
 
-def logarithm(a, b):
+def logarithm(b, a):
     if a <= 0 or b <= 0:
         raise ValueError("ValueError")
-    return math.log(a, b)
+    return math.log(b, a)
