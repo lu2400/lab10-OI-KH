@@ -6,6 +6,7 @@ calculator.py
 
 One function per operation, in order.
 """
+<<<<<<< HEAD
 def square_root(a): 
     if a < 0:
         raise ValueError("ValueError")
@@ -13,24 +14,33 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
+=======
+import math
 
-def add(a, b): a + b
+# First example
 
-def subtract(a, b): a - b    
+def add(a, b): 
+    result = a + b
+    return result
 
-def multiply(a, b): a * b
+def mul(a, b):
+    result = a * b
+    return result
 
-def divide(a, b):
+def div(a, b):
     if a == 0:
-        raise ValueError("ZeroDivisionError")
-    return b / a 
+        raise ZeroDivisionError
+    result = b / a
+    return result
+
+def exp(a, b):
+    result = a ** b
+    return result
+>>>>>>> ecb1ba6bd68a47ca9658d16a1515106647435b2b
+
+def subtract(a, b): a - b
 
 def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("ValueError")
     return math.log(a, b)
-
-def exponent(a, b):
-    if a < 0 and b != int(b):
-        raise ValueError("ValueError")
-    return a ** b   

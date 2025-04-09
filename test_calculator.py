@@ -3,12 +3,13 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     # Partner 2
+
     def test_add(self): # 3 assertions
-        pass
+       pass
 
     def test_subtract(self): # 3 assertions
         pass
-    ##########################
+
 
     # Partner 1
     def test_multiply(self): # 3 assertions
