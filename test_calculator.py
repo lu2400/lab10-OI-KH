@@ -15,13 +15,13 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(5,4), 1)
-        self.assertEqual(sub(4, 5), -1)
-        self.assertEqual(sub(0,0), 0)
-        self.assertEqual(sub(-4, -5), 1)
-        self.assertEqual(sub(4, -2), 6)
-        self.assertEqual(sub(0,-2), 2)
-        self.assertEqual(sub(-3,0), -3)
+        self.assertEqual(subtract(5,4), 1)
+        self.assertEqual(subtract(4, 5), -1)
+        self.assertEqual(subtract(0,0), 0)
+        self.assertEqual(subtract(-4, -5), 1)
+        self.assertEqual(subtract(4, -2), 6)
+        self.assertEqual(subtract(0,-2), 2)
+        self.assertEqual(subtract(-3,0), -3)
 
 
     # Partner 1
@@ -44,9 +44,9 @@ class TestCalculator(unittest.TestCase):
             div(0,5)
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(8, 2), 3)
-        self.assertEqual(log(1, 10), 0)
-        self.assertEqual(log(2, 0.5), -1)
+        self.assertEqual(logarithm(8, 2), 3)
+        self.assertEqual(logarithm(1, 10), 0)
+        self.assertEqual(logarithm(2, 0.5), -1)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
