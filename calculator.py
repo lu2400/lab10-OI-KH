@@ -51,4 +51,3 @@ def logarithm(a, b):
         raise ValueError("ValueError")
     return math.log(a, b)
 
-print(add(1, 2))
