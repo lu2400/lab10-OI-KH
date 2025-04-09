@@ -20,14 +20,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(2, 3), 6) 
         self.assertEqual(mul(-2, 3), -6)
         self.assertEqual(mul(0, 3), 0)
-        pass
 
     def test_divide(self): # 3 assertions
         self.assertEqual(div(6, 3), 2)
         self.assertEqual(div(-6, 3), -2)
         self.assertEqual(div(0, 3), 0)
-        pass
-    ##########################
 
     # Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -51,13 +48,11 @@ class TestCalculator(unittest.TestCase):
         #     logarithm(0, 5)
         with self.assertRaises(ValueError):
             logarithm(0, 5)
-        pass
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3, 4), 5)
         self.assertEqual(hypotenuse(5, 12), 13)
         self.assertEqual(hypotenuse(8, 15), 17)
-        pass
 
     def test_sqrt(self): # 3 assertions
         # Test for invalid argument, example:
@@ -68,8 +63,6 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             square_root(-1)
         self.assertEqual(square_root(0), 0)
-        pass
-    ##########################
 
 # Do not touch this
 if __name__ == "__main__":
