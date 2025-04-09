@@ -14,9 +14,6 @@ import math
 
 # First example
 
-def add(a, b): 
-    result = a + b
-    return result
 def subtract(a, b):
     result = a - b
     return result
@@ -28,7 +25,7 @@ def mul(a, b):
 def div(a, b):
     if a == 0:
         raise ZeroDivisionError
-    result = b/a
+    result = a/b
     return result
 
 def square_root(a):
@@ -46,10 +43,12 @@ def exp(a, b):
     result = a ** b
     return result
 
-def add(a, b): a + b
+def add(a, b):
+    return a + b
 
 def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("ValueError")
     return math.log(a, b)
 
+print(add(1, 2))
