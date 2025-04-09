@@ -33,7 +33,6 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self): # 3 assertions
         self.assertEqual(div(6, 3), 2)
         self.assertEqual(div(-6, 3), -2)
-        self.assertEqual(div(3, 0), 0)
 
     # Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -41,7 +40,7 @@ class TestCalculator(unittest.TestCase):
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     div(0, 5)
         with self.assertRaises(ZeroDivisionError):
-            div(0,5)
+            div(5,0)
 
     def test_logarithm(self): # 3 assertions
         self.assertEqual(logarithm(8, 2), 3)
