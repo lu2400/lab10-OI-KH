@@ -9,10 +9,19 @@ class TestCalculator(unittest.TestCase):
     # Partner 2
 
     def test_add(self): # 3 assertions
-       pass
+        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(0, 0), 0)
+        self.assertEqual(add(-3, 2), -1)
+
 
     def test_subtract(self): # 3 assertions
-        pass
+        self.assertEqual(sub(5,4), 1)
+        self.assertEqual(sub(4, 5), -1)
+        self.assertEqual(sub(0,0), 0)
+        self.assertEqual(sub(-4, -5), 1)
+        self.assertEqual(sub(4, -2), 6)
+        self.assertEqual(sub(0,-2), 2)
+        self.assertEqual(sub(-3,0), -3)
 
 
     # Partner 1
@@ -31,15 +40,18 @@ class TestCalculator(unittest.TestCase):
         # call division function inside, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     div(0, 5)
-        pass
+        with self.assertRaises(ZeroDivisionError):
+            div(0,5)
 
     def test_logarithm(self): # 3 assertions
-        pass
+        self.assertEqual(log(8, 2), 3)
+        self.assertEqual(log(1, 10), 0)
+        self.assertEqual(log(2, 0.5), -1)
 
     def test_log_invalid_base(self): # 1 assertion
-        # use same technique from test_divide_by_zero
-        pass
-    ##########################
+        with self.assertRaises(ZeroDivisionError):
+            log(10, 1)
+
     
     # Partner 1
     def test_log_invalid_argument(self): # 1 assertion
@@ -64,6 +76,6 @@ class TestCalculator(unittest.TestCase):
             square_root(-1)
         self.assertEqual(square_root(0), 0)
 
-# Do not touch this
+# Do not touch thiss
 if __name__ == "__main__":
     unittest.main()
